@@ -16,7 +16,10 @@ import com.ganesh.portfolio.service.ContactService;
 
 @RestController
 @RequestMapping("/api/v1/contact")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {
+	    "http://localhost:5173",
+	    "https://ganeshkopparthi.vercel.app"
+	})
 public class ContactController {
 
     private final ContactService contactService;
